@@ -1,5 +1,30 @@
-import Vue from "vue";
-import Router from "vue-router";
-import Home from "@/views/Home.vue";
+import { createRouter, createWebHistory } from "vue-router";
 
-Vue.use(Router);
+// import Home from "./views/Home.vue";
+import Home from "@/views/Home";
+import About from "@/views/About.vue";
+import Login from "@/views/Login.vue";
+
+const routes = [
+  {
+    path: "/",
+    name: "Home",
+    component: Home
+  },
+  {
+    path: "/about",
+    name: "About",
+    component: About
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login
+  }
+];
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+});
+
+export default router;

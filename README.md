@@ -1,4 +1,5 @@
-# t
+### Question
+1. how to nav back to '/' when user refresh the page
 
 ## Project setup
 ```

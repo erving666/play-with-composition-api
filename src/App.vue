@@ -1,16 +1,23 @@
 <template>
   <img alt="Vue logo" src="./assets/img/logo.png" />
-  <HelloWorld msg="Hello Vue 3 in CodeSandbox!" />
-  <Login></Login>
+  <br />
+  <router-link to="/">Home</router-link> |
+  <router-link to="/About">About</router-link> |
+  <router-link to="/Login">Login</router-link>
+  <router-view></router-view>
 </template>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
-// import Login from "@/components/Login.vue";
+// import Home from "@/views/Home.vue";
+// import About from "@/views/About.vue";
+// import Login from "@/views/Login.vue";
+
 export default {
   name: "App",
   components: {
-    HelloWorld: HelloWorld,
+    // Home: Home,
+    // Login: Login,
+    // About: About,
   },
 };
 </script>
@@ -20,7 +27,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   margin-top: 60px;
 }
